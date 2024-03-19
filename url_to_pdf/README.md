@@ -35,11 +35,11 @@ pip install pyppeteer
 
 #### Defuault path of chrome.exe 
 ```javascript 64-bit Windows
-console.log('C:\Program Files (x86)\Google\Chrome\Application\chrome.exe');
+64-bit Windows :'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe';
 ```
 ```javascript 32-bit Windows
-console.log('C:\Program Files\Google\Chrome\Application\chrome.exe.');
+32-bit Windows :'C:\Program Files\Google\Chrome\Application\chrome.exe.';
 ```
 ```javascript Xubuntu 20.04
-console.log('/opt/google/chrome/chrome');
+Xubuntu 20.04 : '/opt/google/chrome/chrome';
 ```
