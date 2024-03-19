@@ -34,12 +34,15 @@ pip install pyppeteer
 #### Image to data url : https://ezgif.com/image-to-datauri 
 
 #### Defuault path of chrome.exe 
+64-bit Windows :
 ```javascript 64-bit Windows
-64-bit Windows :'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe';
+    C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 ```
+32-bit Windows : 
 ```javascript 32-bit Windows
-32-bit Windows :'C:\Program Files\Google\Chrome\Application\chrome.exe.';
+    C:\Program Files\Google\Chrome\Application\chrome.exe.
 ```
+Xubuntu 20.04 :
 ```javascript Xubuntu 20.04
-Xubuntu 20.04 : '/opt/google/chrome/chrome';
+    /opt/google/chrome/chrome
 ```
