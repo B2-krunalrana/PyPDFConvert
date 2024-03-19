@@ -12,15 +12,18 @@ When converting a URL to PDF, we use Puppeteer and WeasyPrint. Since WeasyPrint 
 
 To run this script, you need to install WeasyPrint and Puppeteer also you need path of chrome.exe
 
+### Step 1 : 
 ```bash or cmd 
 git clone https://github.com/B2-krunalrana/python_pdf_conversion.git
 
 ```
-
+### Step 2 : 
 ```bash or cmd 
 pip install WeasyPrint
 pip install pyppeteer
 ```
+
+## Reference links
 
 ### weasyprint:  https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#installation
 ### pyppeteer:  https://pypi.org/project/pyppeteer/
