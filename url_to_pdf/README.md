@@ -10,7 +10,7 @@ When converting a URL to PDF, we use Puppeteer and WeasyPrint. Since WeasyPrint 
 
 ## Installation
 
-To run this script, you need to install WeasyPrint and Puppeteer also you need path of chrome.exe
+To run this script, we need to install WeasyPrint and Puppeteer also we need path of chrome.exe
 
 ### Step 1 : 
 ```bash or cmd 
@@ -28,5 +28,18 @@ pip install pyppeteer
 ### weasyprint:  https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#installation
 ### pyppeteer:  https://pypi.org/project/pyppeteer/
 
-#### Tip : When dealing with images, we need to convert them into data URLs and then include them in HTML files. This helps improve the layout and ensures that everything looks right.
+### Tips : 
+
+#### When dealing with images, we need to convert them into data URLs and then include them in HTML files. This helps improve the layout and ensures that everything looks right.
 #### Image to data url : https://ezgif.com/image-to-datauri 
+
+#### Defuault path of chrome.exe 
+```javascript 64-bit Windows
+console.log('C:\Program Files (x86)\Google\Chrome\Application\chrome.exe');
+```
+```javascript 32-bit Windows
+console.log('C:\Program Files\Google\Chrome\Application\chrome.exe.');
+```
+```javascript Xubuntu 20.04
+console.log('/opt/google/chrome/chrome');
+```
