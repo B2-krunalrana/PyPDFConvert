@@ -40,7 +40,7 @@ pip install pyppeteer
 ```
 32-bit Windows : 
 ```javascript 32-bit Windows
-    C:\Program Files\Google\Chrome\Application\chrome.exe.
+    C:\Program Files\Google\Chrome\Application\chrome.exe
 ```
 Xubuntu 20.04 :
 ```javascript Xubuntu 20.04
