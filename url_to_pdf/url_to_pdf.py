@@ -15,7 +15,7 @@ chromeexe="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
 def html_to_pdf(output_file):
     try:
         # Load HTML content from file
-        html_file_path = output_file
+        html_file_path = output_file + ".html"
         html_content = open(html_file_path, 'r', encoding='utf-8').read()
         print("HTML content read successfully.")
 
@@ -24,8 +24,9 @@ def html_to_pdf(output_file):
         # Create WeasyPrint HTML object
         html = HTML(string=html_content)
 
+        pdf_file_name = output_file + ".pdf"
         # Specify output PDF file path
-        pdf_file_path = os.path.join(os.path.dirname(os.path.abspath(html_file_path)), 'output.pdf')
+        pdf_file_path = os.path.join(os.path.dirname(os.path.abspath(html_file_path)), pdf_file_name)
         print("PDF creation started.")
 
         # Convert HTML to PDF (no font_config argument)
@@ -56,8 +57,9 @@ async def download_rendered_html(url, output_file):
     print(rendered_html)
     print()
 
+    output_file_name=output_file+".html"
     # Save the rendered HTML to a file
-    with open(output_file, "w", encoding="utf-8") as file:
+    with open(output_file_name, "w", encoding="utf-8") as file:
         file.write(rendered_html)
 
     html_to_pdf(output_file)
@@ -68,8 +70,7 @@ async def download_rendered_html(url, output_file):
 url = "https://api.ahaguru-dev.clustrex.com/gethtmlfile/13032024065801/67413"
 
 # Specify the output file path
-output_file = "rendered_html.html"
-
+output_file = "ahaguru_student_report"
 
 
 # Run the asyncio event loop to execute the function
