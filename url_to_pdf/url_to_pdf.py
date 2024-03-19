@@ -1,10 +1,9 @@
 #  pyppeteer
 
 import asyncio
-from pyppeteer import launch
-
-from weasyprint import HTML, CSS
 import os
+from pyppeteer import launch
+from weasyprint import HTML, CSS
 
 
 

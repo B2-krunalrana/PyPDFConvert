@@ -25,3 +25,5 @@ pip install pyppeteer
 ### weasyprint:  https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#installation
 ### pyppeteer:  https://pypi.org/project/pyppeteer/
 
+#### Tip : When dealing with images, we need to convert them into data URLs and then include them in HTML files. This helps improve the layout and ensures that everything looks right.
+#### Image to data url : https://ezgif.com/image-to-datauri 
