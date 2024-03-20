@@ -46,3 +46,7 @@ Xubuntu 20.04 :
 ```javascript Xubuntu 20.04
     /opt/google/chrome/chrome
 ```
+
+### Quick Note:
+
+Just a heads up, we're avoiding CSS frameworks like Bootstrap that heavily depend on JavaScript. Sometimes, these frameworks can cause compatibility issues with WeasyPrint. Therefore, we're committed to steering clear of any frameworks, like Bootstrap, that rely on JavaScript to apply CSS styles.

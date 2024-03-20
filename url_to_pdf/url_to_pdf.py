@@ -1,15 +1,12 @@
-#  pyppeteer
-
+#  pip install pyppeteer
 import asyncio
 import os
 from pyppeteer import launch
 from weasyprint import HTML, CSS
 
 
-
 # add path to chrome.exe
 chromeexe="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
-
 
 
 def html_to_pdf(output_file):
