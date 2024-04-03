@@ -1,0 +1,24 @@
+# Use a base image that includes Python 3.11 and required dependencies
+FROM python:3.11
+
+# Set working directory in the container
+WORKDIR /app
+
+# Install necessary system dependencies
+RUN apt-get update && apt-get install -y \
+    chromium \
+    fonts-noto \
+    fonts-liberation \
+    fonts-freefont-ttf \
+    libxss1 \
+    libappindicator1 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python dependencies
+RUN pip install pyppeteer weasyprint
+
+# Copy your Python script into the container
+COPY url_to_pdf.py .
+
+# Set the entry point for the container
+ENTRYPOINT ["python", "url_to_pdf.py"]
